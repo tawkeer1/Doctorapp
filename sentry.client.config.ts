@@ -28,3 +28,6 @@ Sentry.init({
     }),
   ],
 });
+export const options = {
+  telemetry: false, // Disable Sentry telemetry
+};
