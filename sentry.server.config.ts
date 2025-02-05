@@ -17,7 +17,4 @@ Sentry.init({
   // spotlight: process.env.NODE_ENV === 'development',
 });
 
-export const options = {
-  telemetry: false, // Disable Sentry telemetry
-};
 

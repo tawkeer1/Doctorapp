@@ -36,3 +36,13 @@ export default withSentryConfig(nextConfig, {
   // https://vercel.com/docs/cron-jobs
   automaticVercelMonitors: true,
 });
+const sentryWebpackPluginOptions = {
+  telemetry: false, // Disable telemetry
+};
+
+module.exports = withSentryConfig(
+  {
+    // Your Next.js configuration
+  },
+  sentryWebpackPluginOptions
+);
